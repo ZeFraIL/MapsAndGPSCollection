@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    tools:context=".MyLocationFragment">
+
+    <TextView
+        android:id="@+id/tvMyLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My location"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvMyCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My country"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvMyCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My city"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvMyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My address"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/bRenew"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Renew your location"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

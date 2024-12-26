@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ByLatLonFragment">
+
+    <GridLayout
+        android:columnCount="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#DEF0F3">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+             />
+
+        <EditText
+            android:id="@+id/etLat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:background="#FFFFFF"
+            android:padding="7dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"
+            android:layout_margin="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etLon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:background="#FFFFFF"
+            android:padding="7dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bByGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map by geo data"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp" />
+
+
+
+</LinearLayout>

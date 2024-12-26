@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    android:background="#F3F4E2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps and GPS collectoin"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/FLforF"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bMyLoc"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#73E1EF"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="My Location"/>
+
+            <Button
+                android:id="@+id/bByAddress"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#2196F3"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Location by address"/>
+
+            <Button
+                android:id="@+id/bLatLon"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#9C27B0"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="Location by geodata"/>
+
+            <Button
+                android:id="@+id/bMapFragment"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#009688"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Location by Marker"/>
+
+            <Button
+                android:id="@+id/bTraceFragment"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#FFEB3B"
+                android:textColor="#673AB7"
+                android:textStyle="bold"
+                android:text="Make trace on map"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
